@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>平行直線マッチングゲーム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>平行直線マッチングゲーム</h1>
+    <p>平行な2つの直線の方程式を見つけてください！</p>
+    
+    <div class="game-info">
+      <p id="score">スコア: 0</p>
+      <p id="message">同じ傾きを持つ直線を探しましょう</p>
+    </div>
+    
+    <div id="game-board" class="game-board">
+      <!-- カードはJavaScriptで動的に生成 -->
+    </div>
+    
+    <div class="controls">
+      <button id="restart-btn">ゲームをリスタート</button>
+      <button id="hint-btn">ヒントを表示</button>
+    </div>
+    
+    <div class="instructions">
+      <h3>遊び方</h3>
+      <p>1. カードをクリックして方程式を表示します</p>
+      <p>2. 平行な直線の方程式のペアを見つけましょう</p>
+      <p>3. 平行な直線とは、同じ傾きを持つ異なる直線のことです</p>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
